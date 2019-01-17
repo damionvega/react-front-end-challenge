@@ -23,6 +23,9 @@ class CommentList extends Component {
 
     if (commentText.trim() != null) {
       this.props.createComment(this.props.postId, commentText.trim());
+    this.setState({
+      commentText: '',
+    });
     }
   }
 
